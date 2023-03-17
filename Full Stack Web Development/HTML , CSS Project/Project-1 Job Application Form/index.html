@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Form</title>
+</head>
+<body>
+  <!-- main section  -->
+    <section>
+      <!-- apply box start  -->
+        <div class="apply-box">
+          <!-- heading  -->
+        <h1>
+          Job Applications
+          <span>(Web)</span>
+        </h1>
+
+        <!-- form start  -->
+        
+        <form  action="" method="get" target="_blank">
+              <div class="form-container">
+                <!-- FIRSTNAME  -->
+                <div class="form-control">
+                <label for="name">First Name</label>
+                <input type="text"  id="name" class="name"placeholder="Enter Your FirstName..">
+              </div>
+
+              <!-- LASTNAME -->
+              <div class="form-control">
+                <label for="LastName">Last Name</label>
+                <input type="text"id="LastName" class="LastName" placeholder="Enter Your LastName...">
+              </div>
+
+              <!-- Email  -->
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="email"placeholder="Enter Email..">
+              </div>
+
+              
+              <!-- Job Role -->
+              <div class="form-control">
+                <label for="JobRole">Job Role</label>
+                <select name="JobRole" id="JobRole">
+                    <option value="select">Select Job Role</option>
+                <option value="Fronted Devloper">Fronted Devloper"</option>
+                <option value="Backend Devloper">Backend Devloper</option>
+                <option value="Full Stack Web Devloper">Full Stack Web Devloper</option>
+                <option value="UI and UX designer">UI and UX designer</option>
+                <option value="Data Analytics">Data Analytics</option>
+                </select>
+            </div>
+
+             <!-- address  -->
+             <div class="textarea-control">
+              <label for="address">Address</label>
+              <textarea name="address" id="address" rows="2" cols="50" placeholder="Enter Your Address"></textarea>
+              </div>
+
+                <!-- city -->
+                <div class="form-control">
+              <label for="city">City</label>
+               <input type="text" name="city" id="city">
+            </div>
+
+            <!-- Pincode  -->
+            <div class="form-control">
+                <label for="pin">PinCode</label>
+                <input type="number" name="pin" id="pin" placeholder="Enter PinCode..">
+            </div>
+
+             <!-- DOB -->
+             <div class="form-control">
+              <label for="DOB">Date Of Birth</label>
+              <input type="date" name="DOB" id="DOB">
+            </div>
+
+            <!-- Date  -->
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" value="2023-02-16">
+            </div>
+    
+            <!-- Upload Your CV  -->
+            <div class="form-control">
+                <label for="CV">Upload Your CV</label>
+                 <input type="file" name="CV" id="CV">
+            </div>
+            
+            <!-- Checkbox  -->
+            <div class="form-control">
+              <div>
+                <label for="Fresher">Are You Fresher ?</label>
+                <input type="checkbox" name="Fresher" id="Fresher">
+              </div>
+        </div>
+      </div>
+
+        <!-- button  -->
+            <div class="btn">
+              <button type="submit">Apply Now</button>
+            </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

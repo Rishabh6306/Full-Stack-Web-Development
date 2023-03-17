@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(129, 4, 245);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: 0 0 0 4px rgb(129, 4, 245);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px;
+    padding: 12px 0;
+    color: #952df5f8;
+}
+
+header p {
+    width: 300px;
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 17px;
+}
+
+/* paragraph and input select change  */
+p::selection,
+input::selection {
+    background-color: yellow;
+}
+
+/* button and both decoration  */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 330px;
+    gap: 10px;
+}
+
+/* input decoration  */
+main input {
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid blue;
+    color: rgb(151, 45, 250);
+}
+
+/* button decoration  */
+main button {
+    padding: 10px 15px;
+    font-size: 17px;
+    background-color: rgb(92, 10, 168);
+    color: white;
+    border: none;
+    opacity: 0.8;
+}
+
+/* if anyone click on the button then  */
+main button:active {
+    opacity: 0.4;
+}
+
+/* In the information paragraph for change the some text color  */
+span {
+    color: rgb(92, 8, 170);
+}

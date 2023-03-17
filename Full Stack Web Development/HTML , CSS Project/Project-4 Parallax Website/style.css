@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.first-png {
+    background: url(/img/pexels-baskin-creative-studios-1766838.jpg) fixed center center/cover;
+   min-height: 100vh;
+    position: relative; 
+
+}
+
+.second-png {
+    background: url(/img/pexels-eberhard-grossgasteiger-443446.jpg) fixed center center/cover;
+    min-height: 100vh;
+    position: relative; 
+
+}
+
+.third-png {
+    background: url(/img/pexels-ian-turnell-709552.jpg) fixed center center/cover;
+    min-height: 100vh;
+    position: relative; 
+}
+
+.fourth-png {
+    background: url(/img/pexels-achim-bongard-352096.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative; 
+}
+
+h2 {
+    padding: 40px;
+    color: darkgreen;
+    font-size: 2.0rem;
+}
+
+.section {
+    text-align: center;
+    /* height: 300px; */
+padding: 20px;
+}
+
+.first {
+    background-color: rgb(246, 250, 246);
+}
+
+.second {
+    background-color: rgb(229, 236, 234);
+}
+
+.third {
+    background-color: rgb(246, 239, 245);
+}
+
+.all-heading {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg {
+    background-color: rgb(59, 211, 59);
+    color: whitesmoke;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 562px) {
+    .textBg {
+        padding: 2px 10px;
+    }
+}

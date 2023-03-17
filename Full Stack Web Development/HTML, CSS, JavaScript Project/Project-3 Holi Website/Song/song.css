@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(127, 199, 88)  0%, rgb(12, 117, 230) 100%);
+}
+
+nav ul {
+    display: flex;
+    margin: 20px 0px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0px 100px;
+    color: white;
+}
+
+section {
+    background: url(/Song/pexels-ravi-kant-1927612.jpg) no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+   }
+
+  audio {
+    margin-top: 20px;
+    background-color: rgb(0, 255, 30);
+  }
+
+  @media screen  and (max-width: 581px){
+    nav ul li a {
+      padding: 0px 20px;
+    }
+    audio {
+        margin-top: 30px;
+      }
+
+  }

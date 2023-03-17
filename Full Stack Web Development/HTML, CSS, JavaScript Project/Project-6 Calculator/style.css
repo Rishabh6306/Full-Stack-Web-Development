@@ -1,0 +1,73 @@
+/* Universal selector  */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* target whole screen by section tag */
+section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container for rows and input  */
+.container {
+    background-color: #5b5858;
+     padding: 6px 2px;
+     text-align: center;
+}
+
+/* heading tag designing  */
+h1 {
+    text-align: center;
+    color: chartreuse;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+/* button desing by attribute selector  */
+[type="colorbtn"] {
+    background-color: #A9A9A9;
+    font-size: 23px;
+     padding: 16px  20px;
+     margin: 6px 3px;
+     border-radius: 25px;
+     border: none;
+     color: #FFFFFF;
+     font-weight: 600;
+}
+
+
+[type="colorbtn"]:hover {
+    background-color: 	#808080;
+   
+}
+
+/* decrease the padding of first and second button  */
+.btn1 {
+    padding: 12px;
+}
+
+/* give the higlight for some buttons  */
+.btn2 {
+   color: rgb(77, 255, 0);
+   font-weight: 600;
+}   
+
+/* designing input box  */
+input {
+ width: 250px;
+ padding-top: 50px;
+ padding-right: 6px;
+ text-align: right;
+ font-size: 2.6rem;
+ border: none;
+ background-color: #5b5858;
+ color: white;
+}

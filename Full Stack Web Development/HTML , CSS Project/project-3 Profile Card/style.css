@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: gray;
+    background-color: rgb(195, 195, 195);
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgb(191, 191, 191);
+    box-shadow: 2px 2px 2px gray, -2px -2px 2px white;
+    border: 5px solid white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    height: 450px;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(221,221,221);
+    box-shadow: 5px 5px 5px gray -5px -5px 3px white;
+}
+
+.card .first-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.second-section {
+    display: flex;
+    text-align: center;
+}
+
+.socail-media  a {
+    padding: 10px;
+     width: 60px;
+     background-color: rgb(221,221,221);
+}
+
+.socail-media a i {
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray, 5px 5px 5px white;
+    border-radius: 60%;
+    margin: 6px 0;
+}
+
+.socail-media a:nth-child(2) {
+    color: blue;
+}
+
+.socail-media a:nth-child(2) {
+    color: #088cc0da;
+}
+
+.socail-media a:nth-child(3) {
+    color: rgb(226, 61, 61);
+}
+
+.socail-media a:nth-child(4) {
+    color: red;
+}
+
+.myBtn button {
+    border-radius: 20px;
+    padding: 17px;
+    margin: 0 7px;
+    box-shadow: 5px 5px 5px gray, 5px 5px 5px white;
+    border:none;
+    font-size: 16px;
+}
+
+.myBtn button:hover {
+    border-radius: 20px;
+    padding: 17px;
+    margin: 0 7px;
+   color: rgb(172, 110, 34);
+   background-color: rgb(227, 250, 250);
+    border:none;
+    font-weight: 900;
+    font-size: 16px;
+}
+.like-comments {
+    display: flex;
+}
+
+.like-comments div {
+    display: flex;
+    margin: 15px;
+}
+
+.like-comments div:nth-child(1) {
+    border-right: 2px solid rgb(105, 105, 105);
+    padding-right: 22px;
+}
+
+
+.like-comments div:nth-child(2) {
+    border-right: 2px solid rgb(105, 105, 105);
+    padding-right: 22px;
+}
+
