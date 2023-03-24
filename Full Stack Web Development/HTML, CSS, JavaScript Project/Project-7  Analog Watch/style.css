@@ -1,0 +1,120 @@
+/* Universal Selector  */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* section designing  */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background: url(img/pexels-pixabay-268415.jpg)no-repeat center center/cover;
+}
+
+/* container designing  */
+.container {
+    height: 470px;
+    width: 470px;
+    position: relative;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 30px rgb(139, 139, 243), -15px -15px 50px rgb(171, 171, 254);
+    background: url(img/sam-ueGaQiHV86o-unsplash.jpg)no-repeat center center/cover;
+}
+
+
+/* clock designing start  */
+.clock {
+    height: 400px;
+    width: 400px;
+    position:absolute;
+    top: 30px;
+    right: 30px;
+    background: url(img/clockbackground.png) no-repeat center center/cover;
+    border-radius: 50%;
+    box-shadow: inset 15px 15px 30px rgb(104, 104, 255), inset -15px -15px 30px rgb(95, 95, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* clock designing */
+.clock::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid white;   
+}
+
+/* clock hands Designing */
+#hour {
+    width: 150px;
+    height: 150px;
+}
+
+#minute {
+    width: 200px;
+    height: 200px;
+}
+
+#second {
+    width: 250px;
+    height: 250px;
+}
+
+#hour, #minute, #second {
+    /* border: 1px solid black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+#hour::before {
+    content: "";
+      height: 75px;
+      width: 8px;
+      background-color: black;
+      z-index: 1;
+}
+
+#minute::before {
+    content: "";
+      height: 100px;
+      width: 5px;
+      background-color: black;
+      z-index: 2;
+}
+
+#second::before {
+    content: "";
+      height: 110px;
+      width: 3px;
+      background-color: black;
+      z-index: 3;
+}
+
+/* Add Media Query  */
+@media screen and (max-width: 543px){
+    .container {
+        height: 350px;
+        width: 350px;
+        top: 24px;
+        right: 24px;
+        margin-left: 30px;
+    }
+    
+    .clock {
+        height: 300px;
+        width: 300px;
+        top: 24px;
+        right: 24px;
+    }
+}
