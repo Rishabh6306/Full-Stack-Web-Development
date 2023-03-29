@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: aquamarine; */
+    color: blue;
+}
+
+nav {
+    height: 15vh;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    justify-content: center;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* css for dark mode  */
+
+
+#dark {
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    right: 20px;
+    top: 20px;
+}
+
+#dark::before {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 47px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.4s;
+}
+
+#dark.active::before {
+    background-color: white;
+    left: 47px;
+}
+
+body.night {
+    background-color: black;
+    color: white;
+}
+
+nav.heading {
+    background-color: #353935;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 50px 20px 0px 60px;
+    position: relative;
+}
+
+.line {
+    background-color: orangered;
+    height: 3px;
+    width: 0px;
+    top: 50%;
+    position: absolute;
+}
+
+
+.boxes {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.box {
+    border: 2px solid blue;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.info {
+    padding: 0 34px;
+}
+
+.info1 span {
+    font-size: 2.5rem;
+}
+
+.info1 h1 {
+    display: none;
+    color: red;
+}
+
+.image img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+button {
+    border: 2px solid rgb(8, 218, 8);
+    border-radius: 6px;
+    padding: 6px;
+    background-color: rgb(131, 235, 131);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+button:active {
+    background-color: rgb(166, 208, 166);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        height: 140px;
+    }
+
+
+    #dark {
+        top: 80px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        margin-top: 44px;
+    }
+
+    .boxes {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
