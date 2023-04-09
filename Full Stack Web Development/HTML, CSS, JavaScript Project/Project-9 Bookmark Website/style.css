@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8be603;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3.0rem;
+    color: orangered;
+}
+
+#btn {
+    font-size: 25px;
+    padding: 30px 40px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+#btn:hover {
+    padding: 31px 41px;
+    background-color: rgb(255, 26, 26);
+}
+
+#boxes {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#box {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    margin-top: 22px;
+    margin-right: 40px;
+}
+
+#box a {
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+#box img {
+    height: 35px;
+    width: 35px;
+    color: red;
+}
+
+#boxes #delete {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+#boxes #delete i {
+    font-size: 23px;
+    color: red;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+
+#secondcontainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+}
+
+.secondcontainerclass {
+    display: flex !important;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 440px;
+    width: 550px;
+    background-color: black;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+#form h1 {
+    margin-bottom: 50px;
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+#form label {
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+#form input {
+    height: 70px;
+    font-size: 2.0rem;
+}
+
+#form #button {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 26px;
+    background-color: aliceblue;
+}
+
+
+#form #button:hover {
+    background-color: rgb(157, 209, 255);
+}
+
+#back {
+    position: fixed;
+    top: 10%;
+    right: 10%; 
+}
+
+
+@media screen and (max-width: 450px){
+
+#form {
+    padding: 100px;
+}
+#form h1 {
+  font-size: 2.7rem;
+}
+
+#form label {
+    font-size: 2.0rem;
+    margin-top: 5px;
+}
+
+#form input {
+    height: 50px;
+}
+
+#form #button {
+     font-size: 30px;
+}
+
+}
