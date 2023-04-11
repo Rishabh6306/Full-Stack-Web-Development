@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: silver;
+    border-radius: 25px;
+    border: 2px solid gray;
+    transition: all ease-in-out 2s;
+    padding: 12px;
+}
