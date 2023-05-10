@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Star Print</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+  <!-- css  -->
+    <style>
+      * {
+    margin: 0;0
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Set the body background color to black */
+body {
+    background-color: black;
+}
+
+/* Set the size and color of the stars */
+.star {
+    width: 100px;
+    height: 100px;
+    /* background-color: goldenrod; */
+    position: absolute;
+    animation: twinkle 0.6s infinite alternate;
+}
+
+.star::before {
+  content: "✰ 🌟";
+  color: white;
+  font-size: 50px;
+}
+
+
+/* Define the twinkle animation */
+@keyframes twinkle {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+    </style>
+
+<!-- JavaScript  -->
+   <script>
+    let container = document.getElementById("cont");
+// Define a function to generate a random number
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+// Define a function to create a new star
+function createStar() {
+  // Create a new div element and set its class to "star"
+  let star = document.createElement("div");
+  star.className = "star";
+  // Set the star's position to a random location on the screen
+  star.style.top = getRandomNumber(0, 80) + "%";
+  star.style.left = getRandomNumber(0, 80) + "%";
+  // Add the star to the document body
+  document.body.appendChild(star);
+
+  // Remove the star after a random delay
+  setTimeout(function () {
+    star.remove();
+  }, getRandomNumber(10000, 10000));
+}
+
+// Call the createStar function every 100 milliseconds
+setInterval(function () {
+  createStar();
+}, 200);
+   </script>
+  </body>
+</html>
