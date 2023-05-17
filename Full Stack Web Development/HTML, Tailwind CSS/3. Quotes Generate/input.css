@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#rain-container {
+  @apply fixed top-0 left-0 w-full h-full pointer-events-none;
+}
+
+.raindrop {
+  @apply absolute w-2 h-40 bg-blue-500 animate-raindrop-fall;
+}
+
+@keyframes raindrop-fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

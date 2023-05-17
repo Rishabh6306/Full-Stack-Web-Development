@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/quotes-b48474b6.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <title>Amazing Quotes</title>
+  <link rel="stylesheet" href="/assets/index-27206fcf.css">
+</head>
+<body>
+  <!-- -->
+  <div id="rain-container"></div>
+  <div id="container" class="bg-[#1B98F3] h-[100vh] flex justify-center items-center">
+
+    <!-- small box  -->
+    <div id="main-box" class="bg-white shadow-blue-800 shadow-lg ssm:w-[350px] ssm:h-[470px] sm:m-24  md:w-[680px] md:h-[450px]  mds:w-[750px] mds:h-[460px] rounded-2xl relative">
+
+      <!-- quotes icon  -->
+      <i class="fa fa-duotone fa-quote-left text-slate-400 text-5xl my-5 mx-11"></i>
+
+      <!-- add button for copy  -->
+      <button id="copy-button" class="float-right bg-slate-600 text-white p-2 rounded-[5px] m-0.4">Copy</button>
+
+      <!-- paragraph  -->
+      <p id="textToCopy" class="ssm:px-8 ssm:py-4 sm:px-12 sm:py-6 font-design ssm:text-[1.4rem] sm:text-[1.6rem]"></p>
+  
+      <!-- author's name  -->
+      <span class="float-right p-6 italic font-bold" id="author"></span>
+  
+      <!-- Add button for generate new quote   -->
+      <button class="bg-blue-700 hover:bg-blue-600 p-3 text-[1.3rem] text-white text-center absolute bottom-0 w-full" id="btn">New Quotes</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script>
+    const paragarph = document.getElementById("textToCopy");
+const author = document.getElementById("author");
+let button = document.getElementById("btn");
+let copyButton = document.getElementById("copy-button");
+
+const quotes = async () => {
+  try {
+    const response = await fetch("https://type.fit/api/quotes");
+    const data = await response.json();
+
+    // Generate random number 
+    let random = Math.floor(Math.random() * data.length);
+
+    paragarph.innerText = data[random].text;
+
+    // check author value is null or not 
+    if (data[random].author === null || data[random].author === "") {
+      author.innerText = "Unknown~";
+    } else {
+      author.innerText = `${data[random].author}~`;
+    }
+
+    // reset buttons after generate new quotes 
+    copyButton.innerHTML = "Copy";
+    copyButton.disabled = false;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// Call the function
+quotes();
+
+// Add button generate quotes
+button.addEventListener("click", quotes);
+
+// Copy button
+function copyText() {
+  var text = paragarph.innerText;
+  navigator.clipboard.writeText(text);
+  copyButton.innerHTML = "Copied";
+  copyButton.disabled = true;
+}
+
+copyButton.addEventListener("click", copyText);
+
+
+function createRaindrops() {
+  const container = document.getElementById("rain-container");
+  const numRaindrops = Math.floor(window.innerWidth / 5);
+
+  for (let i = 0; i < numRaindrops; i++) {
+    const raindrop = document.createElement("div");
+    raindrop.className = "raindrop";
+    raindrop.style.left = `${Math.random() * 100}%`;
+    raindrop.style.animationDelay = `${Math.random() * 2000}ms`;
+    container.appendChild(raindrop);
+  }
+}
+
+createRaindrops();
+
+  </script>
+</body>
+</html>
+
+
+
