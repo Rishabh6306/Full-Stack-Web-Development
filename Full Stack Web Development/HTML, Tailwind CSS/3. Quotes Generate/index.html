@@ -13,15 +13,16 @@
   <title>Amazing Quotes</title>
 </head>
 <body>
-  <!-- -->
-  <div id="rain-container"></div>
-  <div id="container" class="bg-[#1B98F3] h-[100vh] flex justify-center items-center">
-
+  <!-- main container  -->
+  <div id="container" class="h-[100vh] flex justify-center items-center">
+    <img src="/WhatsApp Image 2023-05-18 at 11.46.25 AM.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+  
     <!-- small box  -->
-    <div id="main-box" class="bg-white shadow-blue-800 shadow-lg ssm:w-[350px] ssm:h-[470px] sm:m-24  md:w-[680px] md:h-[450px]  mds:w-[750px] mds:h-[460px] rounded-2xl relative">
+    <div id="main-box" class="bg-gradient-to-br from-purple-400 to-cyan-300 shadow-lg ssm:w-[350px] ssm:h-[470px] sm:m-24  md:w-[680px] md:h-[450px]  mds:w-[750px] mds:h-[460px] rounded-2xl relative">
+      
 
       <!-- quotes icon  -->
-      <i class="fa fa-duotone fa-quote-left text-slate-400 text-5xl my-5 mx-11"></i>
+      <i class="fa fa-duotone fa-quote-left text-slate-600 text-5xl my-5 mx-11"></i>
 
       <!-- add button for copy  -->
       <button id="copy-button" class="float-right bg-slate-600 text-white p-2 rounded-[5px] m-0.4">Copy</button>
@@ -33,14 +34,11 @@
       <span class="float-right p-6 italic font-bold" id="author"></span>
   
       <!-- Add button for generate new quote   -->
-      <button class="bg-blue-700 hover:bg-blue-600 p-3 text-[1.3rem] text-white text-center absolute bottom-0 w-full" id="btn">New Quotes</button>
+      <button class="bg-gradient-to-r from-blue-600 to-green-700 hover:from-blue-500 hover:to-green-600 p-3 text-[1.3rem] text-white text-center absolute bottom-0 w-full" id="btn">New Quotes</button>
     </div>
   </div>
 
-  <script src="https://unpkg.com/alpinejs" defer></script>
-  <script src="/script.js"></script>
+ <!-- Script added  -->
+ <script src="/script.js"></script>
 </body>
 </html>
-
-
-
