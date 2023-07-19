@@ -22,7 +22,6 @@ To use the projects from the "HTML and Tailwind CSS" folder, you need to clone t
 2. Navigate to the directory where you want to clone the repository.
 3. Run the following command:
 
-```bash
 git clone https://github.com/Rishabh6306/Full-Stack-Web-Development.git
 
 ### Running Tailwind CSS Projects
