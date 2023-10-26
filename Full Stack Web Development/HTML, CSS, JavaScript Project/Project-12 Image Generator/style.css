@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url(./bg.jpg) center center/cover no-repeat;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container {
+    color: white;
+    margin: 20px;
+}
+
+.top-container h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.top-container p {
+    margin-bottom: 32px;
+    font-size: 25px;
+    word-wrap: break-word;
+}
+
+.search-box input,
+select,
+button {
+    border: none;
+}
+
+.search-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    display: flex;
+}
+
+.search-box input {
+    padding: 0 15px;
+    width: 70%;
+    font-size: 15px;
+    cursor: unset;
+}
+
+.search-box button {
+    background-color: #1515f8;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.bottom-container {
+   margin: 25px 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+}
+
+.images {
+    width: 280px;
+    position: relative;
+}
+
+.images img {
+    width: 100%;
+}
+
+.images span {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  right: 20px;
+}
+
+.bottom-container img {
+   border-radius: 20px;
+   width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .search-box input {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-container h1 {
+        font-size: 2.2rem;
+        margin: 20px 0;
+    }
+
+    .search-box {
+        background: none;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .search-box input {
+        width: 100%;
+        border-radius: 50px;
+        padding: 12px;
+    }
+
+    select {
+        background: none;
+        color: white;
+    }
+
+    select option {
+        color: black;
+    }
+
+    .top-container {
+        color: white;
+    }
+
+    .search-btn {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
